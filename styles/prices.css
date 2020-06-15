@@ -1,0 +1,220 @@
+.prices {
+  margin-top: 50px;
+  padding-left: 90px;
+  position: relative;
+  background-image: url("../images/prices_background.svg");
+  height: 1133px;
+  background-position: center;
+  background-size: cover; }
+  .prices__container {
+    display: grid;
+    grid-template-rows: 250px 150px 800px;
+    max-width: 1920px;
+    margin: 0 auto; }
+  .prices__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: black; }
+    @media screen and (max-width: 1440px) {
+      .prices__heading {
+        font-size: 40px; } }
+  .prices__prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%; }
+  .prices__prices-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .prices__gray-line::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 200px;
+    background: #c4c4c4;
+    -webkit-transform: translate(328px, 75px) rotate(90deg);
+            transform: translate(328px, 75px) rotate(90deg); }
+  .prices__prices-text {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000; }
+    @media screen and (max-width: 1555px) {
+      .prices__prices-text {
+        font-size: 15px; } }
+  .prices__counter {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f9a80b; }
+    @media screen and (max-width: 1440px) {
+      .prices__counter {
+        font-size: 40px; } }
+  .prices__counters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .prices__prices-color {
+    color: black; }
+  .prices__flats {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 32vw; }
+  .prices__flats-article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 200;
+    font-size: 96px;
+    line-height: 115px;
+    font-style: normal;
+    color: #000; }
+    @media screen and (max-width: 1720px) {
+      .prices__flats-article {
+        font-size: 67px; } }
+    @media screen and (max-width: 1440px) {
+      .prices__flats-article {
+        font-size: 50px;
+        line-height: 60px; } }
+  .prices__form {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 481px;
+    height: 662px;
+    background: #2d2d2d;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: auto; }
+    @media screen and (max-width: 1440px) {
+      .prices__form {
+        left: -10%;
+        width: 26vw; } }
+  .prices__form-select {
+    color: #f9a80b;
+    background: #2d2d2d;
+    outline: none;
+    border-bottom: 1px solid #f9a80b;
+    border-style: none none solid;
+    width: 17vw;
+    height: 50px; }
+    .prices__form-select::-webkit-input-placeholder {
+      color: white; }
+    .prices__form-select::-moz-placeholder {
+      color: white; }
+    .prices__form-select:-ms-input-placeholder {
+      color: white; }
+    .prices__form-select::-ms-input-placeholder {
+      color: white; }
+    .prices__form-select::placeholder {
+      color: white; }
+  .prices__form-option {
+    width: 17vw;
+    height: 50px; }
+  .prices__form-input {
+    color: white;
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-style: none none solid;
+    border-bottom: 1px solid #f9a80b;
+    background: #2d2d2d;
+    width: 17vw;
+    height: 55px; }
+    .prices__form-input::-webkit-input-placeholder {
+      color: white; }
+    .prices__form-input::-moz-placeholder {
+      color: white; }
+    .prices__form-input:-ms-input-placeholder {
+      color: white; }
+    .prices__form-input::-ms-input-placeholder {
+      color: white; }
+    .prices__form-input::placeholder {
+      color: white; }
+  .prices__form-button {
+    color: white;
+    width: 17vw;
+    height: 55px;
+    border: none; }
+  .prices__orange-block {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: -9%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 794px;
+    height: 751px;
+    background: #f9a80b;
+    -webkit-transform: translate(-181px, 10px);
+            transform: translate(-181px, 10px);
+    z-index: 0; }
+    @media screen and (max-width: 1720px) {
+      .prices__orange-block {
+        width: 46.5vw; } }
+  .prices__img {
+    position: absolute;
+    right: 10%;
+    padding-left: 1vw;
+    width: 441px;
+    height: 702px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+    @media screen and (max-width: 1700px) {
+      .prices__img {
+        width: 23vw;
+        height: 36vw; } }
+
+/*# sourceMappingURL=prices.css.map */

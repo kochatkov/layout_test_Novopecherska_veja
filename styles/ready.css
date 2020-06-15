@@ -1,0 +1,91 @@
+.ready {
+  position: relative; }
+  .ready__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px; }
+  .ready__project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    left: -5px;
+    width: 51vw;
+    height: 268px;
+    border: 5px solid #2d2d2d;
+    padding-left: 200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform: translateX(-90px);
+            transform: translateX(-90px); }
+  .ready__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.1em;
+    color: #2d2d2d;
+    text-align: center; }
+    @media screen and (max-width: 1440px) {
+      .ready__text {
+        font-size: 35px; } }
+  .ready__project-ready {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    color: #f9a80b;
+    text-align: center; }
+    @media screen and (max-width: 1440px) {
+      .ready__project-ready {
+        font-size: 40px; } }
+  .ready__visual-together {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    padding: 50px; }
+  .ready__visual-line {
+    position: relative;
+    background: #f9a80b;
+    width: 22vw;
+    height: 33px;
+    overflow: hidden; }
+  .ready__visual-line-long {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: white;
+    -webkit-transition: 2s;
+    transition: 2s;
+    -webkit-transform: translateX(3%);
+            transform: translateX(3%); }
+  .ready__visual-percent {
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.1em;
+    text-align: end; }
+
+/*# sourceMappingURL=ready.css.map */

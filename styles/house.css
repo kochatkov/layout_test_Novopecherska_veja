@@ -1,0 +1,36 @@
+.house {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 70px; }
+  .house__background {
+    position: absolute;
+    left: 0;
+    background-image: url("../images/plan_of_flat.png");
+    background-size: cover;
+    background-position: center;
+    width: 932.61px;
+    height: 605px; }
+  .house__image {
+    position: relative;
+    background-image: url("../images/house_grafic.png");
+    width: 1259.08px;
+    height: 520.53px;
+    background-size: cover;
+    background-position: center;
+    opacity: 100%; }
+  .house__white {
+    background: white;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 64%;
+    height: 54%;
+    -webkit-transition: 2s;
+    transition: 2s; }
+
+/*# sourceMappingURL=house.css.map */

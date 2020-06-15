@@ -1,0 +1,168 @@
+.about {
+  padding: 5px; }
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px; }
+  .about__visual {
+    position: relative;
+    width: 803px; }
+    @media screen and (max-width: 1440px) {
+      .about__visual {
+        width: 58vw; } }
+  .about__img {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url("../images/house.png");
+    background-size: cover;
+    background-position: center;
+    height: 804px;
+    width: 459px;
+    z-index: -1; }
+    @media screen and (max-width: 1440px) {
+      .about__img {
+        width: 32vw; } }
+    .about__img::after {
+      content: "";
+      position: absolute;
+      height: 804px;
+      width: 459px;
+      background: black;
+      opacity: 0.5;
+      -webkit-filter: blur(45px);
+              filter: blur(45px); }
+  .about__vega-logo {
+    position: relative;
+    width: 357px;
+    height: 201px;
+    z-index: 1; }
+    @media screen and (max-width: 1440px) {
+      .about__vega-logo {
+        width: 20vw; } }
+  .about__yellow-block {
+    background: #f9a80b;
+    width: 323px;
+    height: 751px; }
+  .about__build-years {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 803px;
+    width: 345px;
+    background: #2d2d2d;
+    z-index: 1; }
+    @media screen and (max-width: 1440px) {
+      .about__build-years {
+        width: 26vw; } }
+  .about__build-yellow {
+    top: 7%;
+    background: #f9a80b;
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    right: 80px;
+    -webkit-transform: translateX(-245px);
+            transform: translateX(-245px);
+    -webkit-transition: 2s;
+    transition: 2s; }
+    @media screen and (max-width: 1440px) {
+      .about__build-yellow {
+        width: 23vw; } }
+  .about__year {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .about__year-head {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f9a80b; }
+    @media screen and (max-width: 1440px) {
+      .about__year-head {
+        text-align: center;
+        font-size: 40px; } }
+  .about__year-paragraph {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: lowercase; }
+    @media screen and (max-width: 1440px) {
+      .about__year-paragraph {
+        text-align: center;
+        font-size: 25px; } }
+  .about__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .about__text-wrap {
+    width: 32vw; }
+  .about__text-head {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000; }
+    @media screen and (max-width: 1440px) {
+      .about__text-head {
+        font-size: 30px; } }
+  .about__text-paragraph {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: black;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 1440px) {
+      .about__text-paragraph {
+        font-size: 19px; } }
+  .about__button {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    width: 235px;
+    height: 60px; }
+  .about__background-logo {
+    position: absolute;
+    right: 0;
+    z-index: -1; }
+
+/*# sourceMappingURL=about.css.map */
