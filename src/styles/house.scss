@@ -13,10 +13,24 @@
   }
 
   &__image {
+    position: relative;
     background-image: url("../images/house_grafic.png");
     width: 1259.08px;
     height: 520.53px;
     background-size: cover;
     background-position: center;
+    opacity: 100%;
   }
+
+  &__white {
+    background: white;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 64%;
+    height: 54%;
+    transition: 2s;
+  }
+
 }

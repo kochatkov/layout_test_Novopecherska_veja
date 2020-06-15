@@ -101,4 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   installmentImageObserve.observe(installmentImage);
+
+  const whiteLine = document.querySelector('.house__white');
+  const whiteLineObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        whiteLine.style.opacity = '0';
+      }
+    });
+  });
+
+  whiteLineObserver.observe(whiteLine);
 });
