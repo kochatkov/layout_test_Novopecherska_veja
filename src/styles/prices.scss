@@ -1,0 +1,202 @@
+@import "utils/vars";
+
+.prices {
+  margin-top: 50px;
+  padding-left: 90px;
+  position: relative;
+  background-image: url("../images/prices_background.svg");
+  height: 1133px;
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    display: grid;
+    grid-template-rows: 250px 150px 800px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: black;
+    @media screen and (max-width: $middle-width) {
+      font-size: $little-font-size;
+    }
+  }
+
+  &__prices {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__prices-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__gray-line {
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 200px;
+      background: $gray-color;
+      transform: translate(328px, 75px) rotate(90deg);
+    }
+  }
+
+  &__prices-text {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+    @media screen and (max-width: 1555px) {
+      font-size: 15px;
+    }
+  }
+
+  &__counter {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $orange-color;
+    @media screen and (max-width: $middle-width) {
+      font-size: $little-font-size;
+    }
+  }
+
+  &__counters {
+    display: flex;
+    align-items: center;
+  }
+
+  &__prices-color {
+    color: black;
+  }
+
+  &__flats {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 32vw;
+  }
+
+  &__flats-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 96px;
+    line-height: 115px;
+    font-style: normal;
+    color: #000;
+    @media screen and (max-width: 1720px) {
+      font-size: 67px;
+    }
+    @media screen and (max-width: $middle-width) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 481px;
+    height: 662px;
+    background: $dark-gray-color;
+    box-sizing: border-box;
+    margin: auto;
+    @media screen and (max-width: $middle-width) {
+      left: -10%;
+      width: 26vw;
+    }
+  }
+
+  &__form-select {
+    color: $orange-color;
+    background: $dark-gray-color;
+    outline: none;
+    border-bottom: 1px solid $orange-color;
+    border-style: none none solid;
+    width: 17vw;
+    height: 50px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  &__form-option {
+    width: 17vw;
+    height: 50px;
+  }
+
+  &__form-input {
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+    border-style: none none solid;
+    border-bottom: 1px solid $orange-color;
+    background: $dark-gray-color;
+    width: 17vw;
+    height: 55px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  &__form-button {
+    color: white;
+    width: 17vw;
+    height: 55px;
+    border: none;
+  }
+
+  &__orange-block {
+    position: absolute;
+    display: flex;
+    right: -9%;
+    justify-content: center;
+    align-items: center;
+    width: 794px;
+    height: 751px;
+    background: $orange-color;
+    transform: translate(-181px, 10px);
+    z-index: 0;
+    @media screen and (max-width: 1720px) {
+      width: 46.5vw;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 10%;
+    padding-left: 1vw;
+    width: 441px;
+    height: 702px;
+    object-fit: cover;
+    @media screen and (max-width: 1700px) {
+      width: 23vw;
+      height: 36vw;
+    }
+  }
+
+}

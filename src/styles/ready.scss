@@ -1,0 +1,88 @@
+@import "utils/vars";
+
+.ready {
+  position: relative;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+  }
+
+  &__project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    left: -5px;
+    width: 51vw;
+    height: 268px;
+    border: 5px solid $dark-gray-color;
+    padding-left: 200px;
+    box-sizing: border-box;
+    transform: translateX(-90px);
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.1em;
+    color: $dark-gray-color;
+    text-align: center;
+    @media screen and (max-width: $middle-width) {
+      font-size: 35px;
+    }
+  }
+
+  &__project-ready {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    color: $orange-color;
+    text-align: center;
+    @media screen and (max-width: $middle-width) {
+      font-size: $little-font-size;
+    }
+  }
+
+  &__visual-together {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 50px;
+  }
+
+  &__visual-line {
+    position: relative;
+    background: $orange-color;
+    width: 22vw;
+    height: 33px;
+    overflow: hidden;
+  }
+
+  &__visual-line-long {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: white;
+    transition: 2s;
+    transform: translateX(3%);
+  }
+
+  &__visual-percent {
+    color: $dark-gray-color;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.1em;
+    text-align: end;
+  }
+}
