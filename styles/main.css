@@ -38,7 +38,7 @@ p {
     left: 0;
     background: #2d2d2d;
     width: 100%;
-    height: 200px;
+    height: 120px;
     z-index: 3;
     -webkit-transition: 1s;
     transition: 1s; }
@@ -67,7 +67,11 @@ p {
     text-decoration: none;
     font-size: 30px;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .menu__link:hover {
+      color: #f9a80b; }
 
 .header {
   background-image: url("../images/header_background.png");
