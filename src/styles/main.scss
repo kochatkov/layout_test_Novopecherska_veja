@@ -1,7 +1,19 @@
+html {
+  font-family: "Exo 2", sans-serif;
+}
+
 @import "utils";
 @import "fonts";
 @import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "header";
+@import "about";
+@import "ready";
+@import "value";
+@import "prices";
+@import "house";
+@import "layout";
+@import "installment";
+@import "license";
+@import "player";
+@import "buildings";
+@import "navigation";

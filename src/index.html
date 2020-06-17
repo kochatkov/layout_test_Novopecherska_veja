@@ -1,13 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+  <title>Title</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <div class="header__top">
+      <div class="header__menu">
+        <button class="menu">
+        </button>
+        <p class="header__menu-text">МЕНЮ</p>
+      </div>
+      <div class="header__logo-background">
+        <div class="header__logo-vega"></div>
+      </div>
+      <div class="header__flag-background">
+        <div class="header__flag-text"></div>
+      </div>
+    </div>
+    <div class="header__wrapper-info">
+      <div class="header__about">
+        <div class="header__blur-background">
+          <p class="header__head-article">ЖК В ЗЕЛЕНОЙ ЧАСТИ <br> ПЕЧЕРСКА</p>
+        </div>
+        <h2 class="header__head-name">НОВОПЕЧЕРСЬКА ВЕЖА</h2>
+        <div class="header__blur-background"><p class="header__about-text">Рядом парки и ботанические сады. Рукой подать
+          до Днепра.
+          И это все еще Печерск. Быстро добирайтесь до работы и живите в комфорте у
+          себя дома. Это семейный жилой комплекс, в котором хочется остаться
+          навсегда.</p>
+          <p class="header__about-text"><strong>Скачайте презентацию — и сами поймете.</strong></p></div>
+        <div class="header__location">
+          <div class="header__location-logo"></div>
+          <p class="header__location-text">ул. Михайла Бойчука (Киквидзе) 41</p>
+        </div>
+        <div class="header__station">
+          <div class="header__station-logo"></div>
+          <p class="header__location-text">м. Выдубычи</p>
+        </div>
+      </div>
+      <div class="header__download-yellow">
+        <div class="header__download">
+          <h2 class="header__download-acrticle">
+            Скачайте
+            <a href="#" class="header__download-link">PDF-презентацию</a>
+            комплекса в 1 клик
+          </h2>
+          <form action=""
+                class="header__download-form">
+            <input
+              type="tel"
+              class="header__download-input"
+              pattern="[0-9]{8}([0-9]{2})?"
+              title="Phone Number (8 or 10 numbers)"
+            >
+            <button class="header__form-button button">
+              Скачать презентацию
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="menu__menu">
+  <button class="menu__close">
+    X
+  </button>
+  <ul class="menu__list">
+    <li class="menu__item"><a href="#" class="menu__link">Проект</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Планировки</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Рассрочка</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Презентация</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Карта</a></li>
+  </ul>
+</div>
+
+<section class="about">
+  <div class="about__container">
+    <div class="about__visual">
+      <div class="about__img">
+        <img
+          src="./images/logo_veja_.svg"
+          alt="logo"
+          class="about__vega-logo"
+        >
+      </div>
+      <div class="about__build-years">
+        <div class="about__year">
+          <h2 class="about__year-head">2018</h2>
+          <p class="about__year-paragraph">строительство сдания</p>
+        </div>
+        <div class="about__year">
+          <h2 class="about__year-head">2019</h2>
+          <p class="about__year-paragraph">ОБЛИЦОВКА</p>
+        </div>
+        <div class="about__year">
+          <h2 class="about__year-head">2020</h2>
+          <p class="about__year-paragraph">ремонт</p>
+        </div>
+      </div>
+      <div class="about__build-yellow"></div>
+    </div>
+    <div class="about__text">
+      <h2 class="about__text-head">Проект ”Новопечерська Вежа”</h2>
+
+      <div class="about__text-wrap">
+        <p class="about__text-paragraph">
+          ЖК «Новопечерська Вежа» в Киеве — это 26-этажный дом, который
+          состоит из 2 секций. С 1 по 24-й поверхи
+          располагаются одно-, двух-, трех- и четырехкомнатных квартир.
+          Самый сок на вершине башни, 25-26 этажи занимают
+          двухуровневые видовые квартиры с лучшим видом центр и на Днепр.
+        </p>
+        <p class="about__text-paragraph">
+          Минимальная площадь квартир составляет 30 м2, а самые
+          просторные занимают 150м2.
+        </p></div>
+      <button class="about__button button">
+        Оставить заявку
+      </button>
+      <img
+        src="./images/Union.png"
+        alt="background-logo"
+        class="about__background-logo"
+      >
+    </div>
+  </div>
+</section>
+<section class="ready">
+  <div class="ready__container">
+    <div class="ready__project">
+      <p class="ready__text">Текущий этап строительства</p>
+      <h2 class="ready__project-ready">Проект готов!</h2>
+    </div>
+    <div class="ready__visual">
+      <div class="ready__visual-together">
+        <img src="./images/kran.png" alt="building-instrument">
+        <div class="ready__visual-line">
+          <span class="ready__visual-line-long"></span>
+          <h2 class="ready__visual-percent">100%</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="value">
+  <div class="value__container">
+    <div class="carousel__dots">
+      <div class="carousel__dot carousel__dot-active"></div>
+      <div class="carousel__dot"></div>
+      <div class="carousel__dot"></div>
+      <div class="carousel__dot-last"></div>
+    </div>
+    <div class="value__text">
+      <h2 class="value__head">Вид на город</h2>
+      <p class="value__paragraph">
+        Из окна открывается вид на центр Киева, не закрытый
+        другими жилыми комплексами. Достаточно раз оказаться здесь,
+        чтобы влюбиться в вид из окна.
+      </p>
+    </div>
+    <div class="value__images">
+      <img
+        src="./images/pair.png"
+        alt="photo_pair"
+        class="value__img"
+      >
+    </div>
+  </div>
+  <div class="value__slider">
+    <diм class="value__background-gray">
+    </diм>
+    <div class="value__slider-images">
+      <div class="value__slider-image">
+        <p class="value__slider-text">Паркинг</p>
+        <img
+          src="./images/parking.png"
+          alt="photo_parking"
+          class="value__slider-img"
+        >
+      </div>
+      <div class="value__slider-image">
+        <p class="value__slider-text">Панорама</p>
+        <img src="./images/pair.png"
+             alt="photo_pair"
+             class="value__slider-img"
+        >
+      </div>
+      <div class="value__slider-image">
+        <p class="value__slider-text">Развязка</p>
+        <img
+          src="./images/traffic_circle.png"
+          alt="photo_traffic"
+          class="value__slider-img"
+        >
+      </div>
+      <div class="value__slider-image">
+        <p class="value__slider-text">Инфраструктура</p>
+        <img
+          src="./images/infrastructure.png"
+          alt="photo_infrostructure"
+          class="value__slider-img"
+        >
+      </div>
+      <div class="value__slider-image">
+        <p class="value__slider-text">Ход строительства</p>
+        <img
+          src="./images/Hod_stroitelstva.png"
+          alt="photo_building"
+          class="value__slider-img"
+        >
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<section class="prices">
+  <div class="prices__container">
+    <h2 class="prices__heading">
+      Цены и предложения
+    </h2>
+    <div class="prices__prices">
+      <div class="prices__prices-info prices__gray-line">
+        <p class="prices__prices-text">Цена за квадратный метр (от)</p>
+        <div class="prices__counters"><span class="prices__counter" data-target="1270">0</span><span class="prices__counter"> $</span></div>
+
+      </div>
+      <div class="prices__prices-info prices__gray-line">
+        <p class="prices__prices-text">Минимальная цена квартиры (от)</p>
+        <div class="prices__counters"><h2 class="prices__counter" data-target="76520">0</h2><span class="prices__counter"> $</span></div>
+      </div>
+      <div class="prices__prices-info">
+        <p class="prices__prices-text">Осталось квартир в наличии</p>
+        <div class="prices__counters"><h2 class="prices__counter" data-target="35">0</h2><span class="prices__counter"> %</span></div>
+      </div>
+    </div>
+    <div class="prices__flats">
+      <h2 class="prices__flats-article">Подберите <strong>квартиру
+        и</strong> узнайте <strong>точную цену</strong></h2>
+      <form action="" class="prices__form">
+        <select class="prices__form-select">
+          <option
+            class="prices__form-option"
+            value="Кол-во комнат"
+          >Кол-во комнат
+          </option>
+          <option value="1" class="prices__form-option">1
+          </option>
+          <option value="2" class="prices__form-option">2
+          </option>
+
+        </select>
+        <select class="prices__form-select">
+          <option
+            class="prices__form-option"
+            placeholder="Формат покупки"
+          >Формат покупки
+          </option>
+        </select>
+        <input
+          type="text"
+          class="prices__form-input"
+          placeholder="Ваше имя"
+        >
+        <input
+          type="text"
+          class="prices__form-input"
+          placeholder="Ваше телефон"
+        >
+        <button class="prices__form-button button" type="button">Подобрать квартиру</button>
+      </form>
+      <div class="prices__orange-block">
+        <img
+          src="./images/1-room-flat.png"
+          alt=""
+          class="prices__img"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<section class="house">
+  <div class="house__background"></div>
+  <div class="house__image">
+    <span class="house__white"></span>
+  </div>
+</section>
+<section class="layout">
+  <h2 class="layout__heading">Подберите свою видовую планировку</h2>
+  <ul class="layout__rooms">
+    <li class="layout__item">
+      <a href="#" class="layout__link layout__link-active layout__link-left">1 комната</a>
+    </li>
+    <li class="layout__item"><a href="#" class="layout__link">2 комнаты</a></li>
+    <li class="layout__item"><a href="#" class="layout__link">3 комнаты</a></li>
+    <li class="layout__item"><a href="#" class="layout__link layout__link-right">4 комнаты</a></li>
+  </ul>
+  <div class="layout__parameters">
+    <div class="layout__parameters-plan">
+      <button class="layout__button button">Скачать все планировки</button>
+      <button class="layout__button-white">Скачать в Messеnger</button>
+    </div>
+    <div class="layout__parameters-info">
+      <div class="layout__parameters-head-background">
+        <h2 class="layout__parameters-head-text">
+          Планировка 2-1Ex
+        </h2>
+      </div>
+
+      <p class="layout__parameters-paragraph layout__parameters-grid1-1">Кол-во комнат</p>
+      <p class="layout__parameters-paragraph layout__parameters-grid1-2">Проектная площадь</p>
+      <p class="layout__parameters-paragraph layout__parameters-grid1-3">Тип планировки</p>
+      <p class="layout__parameters-block-2-text layout__parameters-grid2-1">1</p>
+      <p class="layout__parameters-block-2-text layout__parameters-grid2-2">66,56 м/кв</p>
+      <p class="layout__parameters-block-2-text layout__parameters-grid2-3">Квартира 2-1Ex</p>
+
+    </div>
+    <div class="layout__parameters-details">
+      <h2 class="layout__details-head">Параметры</h2>
+      <div class="layout__details-details">
+        <div class="layout__details-info">
+          <img src="./images/flat_parameters/bad-room.png" alt="bedroom">
+          <div class="layout__details-double">
+            <span class="layout__details-space">Гостиная</span>
+            <span class="layout__details-one">
+            23,22 м/кв
+          </span>
+          </div>
+        </div>
+        <div class="layout__details-info">
+          <img src="./images/flat_parameters/spalnya%201.png" alt="bed">
+          <div class="layout__details-double">
+            <span class="layout__details-space">Спальня</span>
+            <span class="layout__details-one">17,71 м/кв</span>
+          </div>
+        </div>
+        <div class="layout__details-info">
+          <img src="./images/flat_parameters/kuhnya%201.png" alt="kitchen">
+          <div class="layout__details-double">
+            <span class="layout__details-space">Кухня</span>
+            <span class="layout__details-one"> 13,57 м/кв</span>
+          </div>
+        </div>
+        <div class="layout__details-info">
+          <img src="./images/flat_parameters/vanna%201.png" alt="bathtub">
+          <div class="layout__details-double">
+            <span class="layout__details-space">Ванная комната</span>
+            <span class="layout__details-one">4,57 м/кв</span>
+
+          </div>
+        </div>
+        <div class="layout__details-info">
+          <img src="./images/flat_parameters/garder%201.png" alt="garderob">
+          <div class="layout__details-double">
+
+            <span class="layout__details-space">Гардероб</span>
+            <span class="layout__details-one">3,96 м/кв</span>
+          </div>
+        </div>
+        <div class="layout__details-info">
+          <img src="./images/flat_parameters/balkon%201.png" alt="balcony">
+          <div class="layout__details-double">
+
+            <span class="layout__details-space">Балкон</span>
+            <span class="layout__details-one">4,41 м/кв</span>
+          </div>
+        </div>
+      </div>
+      <button class="layout__details-button button">Узнать цену</button>
+    </div>
+  </div>
+</section>
+<section class="installment">
+  <form class="installment__container">
+    <div class="installment__form">
+      <h2 class="installment__form-head">
+        Условия рассрочки
+      </h2>
+
+      <input
+        type="text"
+        class="installment__form-input"
+        placeholder="Имя"
+      >
+      <input
+        type="text"
+        class="installment__form-input"
+        placeholder="Номер телефона"
+      >
+      <button class="installment__form-button">Отправить запрос</button>
+
+    </div>
+    <div class="installment__image">
+      <img
+        src="./images/hands.png"
+        alt="hands"
+        class="installment__img"
+      ></div>
+  </form>
+</section>
+<section class="license">
+  <div class="license__container">
+    <h2 class="license__heading">Документы и сертификаты комплекса
+      Новопечерська Вежа</h2>
+    <p class="license__head">С ДОКУМЕНТАМИ ВСЕ В ПОРЯДКЕ. ВОТ ПОДТВЕРЖДЕНИЕ</p>
+    <img
+      src="./images/licens/Dozvilnabudivnictvo%201.svg"
+      alt="dozvil_scan"
+      class="license__img"
+    >
+
+    <img
+      src="./images/licens/Ekspertniyzvit%201.svg"
+      alt="zvit_scan"
+      class="license__img"
+    >
+
+    <img
+      src="./images/licens/Держ_акт_на_право_власност_1-1.jpg"
+      alt="derj_act"
+      class="license__img"
+    >
+    <p class="license__text">Разрешение на строительство </p>
+    <p class="license__text">Эксплуатация</p>
+    <p class="license__text">Право собственности</p>
+  </div>
+</section>
+<section class="player">
+  <img
+    src="./images/player/play-button_background.png"
+    class="player__background"
+       alt="background_button">
+  <div class="player__mac-wrapper">
+    <img
+      src="./images/player/Group%2075.png"
+         alt="mac"
+      class="player__mac">
+    <div class="player__play-wrapper">
+      <button class="player__play-button">
+      </button>
+      <p class="player__play-text">Видео презентация</p>
+    </div>
+  </div>
+
+  <div class="player__info">
+    <h3 class="player__info-text">Жилой комплекс <br/> «Новопечерська Вежа» <br/>
+      <span class="player__info-info">
+        Лучше один раз увидеть, чем сто раз услышать,
+        чем сто раз услышать. Посмотрите видеопрезентацию,
+        чтобы узнать больше о жилом комплексе в центре Киева с видом
+        на величественный Днепр.
+      </span>
+    </h3>
+  </div>
+</section>
+<section class="buildings">
+  <div class="buildings__presentation">
+    <ul class="buildings__presentation-list">
+      <li class="buildings__presentation-items">информация</li>
+      <li class="buildings__presentation-items">информация</li>
+      <li class="buildings__presentation-items">информация</li>
+      <li class="buildings__presentation-items">информация</li>
+      <li class="buildings__presentation-items">информация</li>
+      <li class="buildings__presentation-items">информация</li>
+    </ul>
+    <button class="buildings__presentation-button button">
+      Скачать презентацию
+    </button>
+  </div>
+  <img
+    src="./images/jk/jack_house.jpg"
+    alt="building"
+    class="buildings__img"
+  >
+  <img
+    src="./images/jk/bulevar_phontan.jpg"
+    alt="building"
+    class="buildings__img"
+  >
+  <img
+    src="./images/jk/riverstone.jpg"
+    alt="building"
+    class="buildings__img"
+  >
+  <img
+    src="./images/jk/phrancyzskiy.jpg"
+    alt="building"
+    class="buildings__img"
+  >
+  <img
+    src="./images/jk/tetrishall.jpg"
+    alt="building"
+    class="buildings__img"
+  >
+  <img
+    src="./images/jk/park_avenue.jpg"
+    alt="building"
+    class="buildings__img"
+  >
+</section>
+<section class="navigation">
+  <div class="navigation__contacts">
+<h3 class="navigation__heading">
+  Контакты ЖК <strong> "Новопечерська Вежа"</strong>
+</h3>
+    <h4 class="navigation__bold-text">Отдел продаж ЖК  “Новопечерська Вежа”</h4>
+    <h4 class="navigation__bold-text navigation__yellow">Приходите к нам: <br>
+      <span class="navigation__normal-text navigation__white">
+        ул. Михайла Бойчука (Киквидзе), 41м. Киев <br>
+        тел: +38 (044) 333 60 02
+      </span>
+    </h4>
+    <h4 class="navigation__bold-text">
+      Единый отдел продаж <span class="navigation__yellow">"Будкепітал"</span>
+    </h4>
+
+    <h4 class="navigation__bold-text navigation__yellow">Адрес: <br>
+      <span class="navigation__white navigation__normal-text">вул. Івана Мазепи, 10м. Київ</span></h4>
+    <h4 class="navigation__bold-text navigation__yellow">
+      тел: <span class="navigation__white">+38 (044) 333 60 01</span> <br>
+      e-mail: <span class="navigation__white">vezha.kiev.ua@gmail.com</span>
+    </h4>
+    <h4 class="navigation__bold-text navigation__yellow">
+      Режим работи <br>
+      <span class="navigation__white">
+        Пн - Пт 10:00 – 19:00 <br>
+        Сб - Вс 10.00 – 16:00
+      </span>
+  </h4>
+  </div>
+  <iframe
+    class="navigation__map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.26196662404!2d30.54944021985713!3d50.40493297801761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf5c10cc0001%3A0xbef5f7a10e5aa43a!2z0JbQmiAi0J3QvtCy0L7Qv9C10YfQtdGA0YHRjNC60LAg0JLQtdC20LAiIOKAlCDQmtCy0LDRgNGC0LjRgNGLINC90LAg0J_QtdGH0LXRgNGB0LrQtQ!5e0!3m2!1sru!2sua!4v1592062715432!5m2!1sru!2sua"
+    width="600"
+    height="450"
+
+    allowfullscreen=""
+    aria-hidden="false"
+    tabindex="0">
+  </iframe>
+</section>
+
+
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
 </html>

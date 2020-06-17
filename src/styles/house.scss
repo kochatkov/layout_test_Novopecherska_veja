@@ -1,0 +1,36 @@
+.house {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+  &__background {
+    position: absolute;
+    left: 0;
+    background-image: url("../images/plan_of_flat.png");
+    background-size: cover;
+    background-position: center;
+    width: 932.61px;
+    height: 605px;
+  }
+
+  &__image {
+    position: relative;
+    background-image: url("../images/house_grafic.png");
+    width: 1259.08px;
+    height: 520.53px;
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+  }
+
+  &__white {
+    background: white;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 64%;
+    height: 54%;
+    transition: 2s;
+  }
+
+}

@@ -1,0 +1,173 @@
+@import "utils/vars";
+
+.about {
+  padding: 5px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  &__visual {
+    position: relative;
+    width: 803px;
+    @media screen and (max-width: $middle-width) {
+      width: 58vw;
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/house.png");
+    background-size: cover;
+    background-position: center;
+    height: 804px;
+    width: 459px;
+    z-index: -1;
+    @media screen and (max-width: $middle-width) {
+      width: 32vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 804px;
+      width: 459px;
+      background: black;
+      opacity: 0.5;
+      filter: blur(45px);
+    }
+  }
+
+  &__vega-logo {
+    position: relative;
+    width: 357px;
+    height: 201px;
+    z-index: 1;
+    @media screen and (max-width: $middle-width) {
+      width: 20vw;
+    }
+  }
+
+  &__yellow-block {
+    background: $orange-color;
+    width: 323px;
+    height: 751px;
+  }
+
+  &__build-years {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 803px;
+    width: 345px;
+    background: $dark-gray-color;
+    z-index: 1;
+    @media screen and (max-width: $middle-width) {
+      width: 26vw;
+    }
+  }
+
+  &__build-yellow {
+    top: 7%;
+    background: $orange-color;
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    right: 80px;
+    transform: translateX(-245px);
+    transition: 2s;
+    @media screen and (max-width: $middle-width) {
+      width: 23vw;
+    }
+  }
+
+  &__year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__year-head {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $orange-color;
+    @media screen and (max-width: $middle-width) {
+      text-align: center;
+      font-size: $little-font-size;
+    }
+  }
+
+  &__year-paragraph {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    @media screen and (max-width: $middle-width) {
+      text-align: center;
+      font-size: $little-paragraph-font-size;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__text-wrap {
+    width: 32vw;
+  }
+
+  &__text-head {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+    @media screen and (max-width: $middle-width) {
+      font-size: 30px;
+    }
+  }
+
+  &__text-paragraph {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: black;
+    margin-bottom: 30px;
+    @media screen and (max-width: $middle-width) {
+      font-size: 19px;
+    }
+  }
+
+  &__button {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    width: 235px;
+    height: 60px;
+  }
+
+  &__background-logo {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+}

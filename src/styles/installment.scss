@@ -1,0 +1,99 @@
+@import "utils/vars";
+
+.installment {
+  display: flex;
+  justify-content: center;
+  padding: 75px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 33vw;
+    height: 610px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw;
+    background: $orange-color;
+  }
+
+  &__form-head {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: $dark-gray-color;
+    @media screen and (max-width: $middle-width) {
+      font-size: 35px;
+    }
+  }
+
+  &__form-input {
+    color: white;
+    border-style: none none solid;
+    border-bottom: 1px solid $dark-gray-color;
+    background: $orange-color;
+    width: 23vw;
+    height: 55px;
+    outline: none;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    &::placeholder {
+      color: white;
+      text-align: center;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__form-button {
+    height: 55px;
+    width: 16vw;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    background: $dark-gray-color;
+    color: $orange-color;
+    border: 1px solid $dark-gray-color;
+    transition: 0.3s;
+    @media screen and (max-width: $middle-width) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      background: white;
+      border: 1px solid $orange-color;
+    }
+  }
+
+  &__image {
+    box-sizing: border-box;
+    width: 41vw;
+    height: 610px;
+    overflow: hidden;
+    transform: translateX(-545px);
+    transition: 2s;
+  }
+
+  &__img {
+    width: 790px;
+    height: 610px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}

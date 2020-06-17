@@ -1,0 +1,292 @@
+@import "utils/vars";
+
+.menu {
+  background-image: url("../images/menu.png");
+  width: 50px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    position: fixed;
+    top: -200px;
+    left: 0;
+    background: $dark-gray-color;
+    width: 100%;
+    height: 200px;
+    z-index: 3;
+    transition: 1s;
+  }
+
+  &__menu-show {
+    top: 0;
+  }
+
+  &__close {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 50px;
+  }
+
+  &__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+.header {
+  background-image: url("../images/header_background.png");
+  position: relative;
+  background-size: cover;
+  height: 1203px;
+  background-position: center;
+
+  &__container {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+  }
+
+  &__menu-text {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  &__logo-background {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 170px;
+    height: 115px;
+    background: $dark-gray-color;
+  }
+
+  &__logo-vega {
+    background: url("../images/logo_veja_.svg");
+    width: 165px;
+    height: 93px;
+  }
+
+  &__flag-background {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background: url("../images/black-flag.png");
+    width: 322px;
+    height: 74px;
+    right: 0;
+    top: 42px;
+  }
+
+  &__flag-text {
+    position: relative;
+    background: url("../images/capital-logo.png");
+    width: 128px;
+    height: 37px;
+    margin: auto;
+  }
+
+  &__wrapper-info {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 20px;
+    justify-items: center;
+    padding: 0 50px;
+  }
+
+  &__about {
+    width: 30vw;
+  }
+
+  &__head-article {
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: $big-font-size;
+    z-index: 1;
+    @media screen and (max-width: $middle-width) {
+      font-size: $little-font-size;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.63);
+      filter: blur(60px);
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__about-text {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 30px 0;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.63);
+      filter: blur(60px);
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__head-name {
+    color: $orange-color;
+    font-size: 64px;
+    line-height: 77px;
+    @media screen and (max-width: $middle-width) {
+      font-size: $little-font-size;
+      line-height: 40px;
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+  }
+
+  &__location-logo {
+    background: url("../images/location_logo.svg");
+    width: 36px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__location-text {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 25px 10px;
+  }
+
+  &__station {
+    display: flex;
+    align-items: center;
+  }
+
+  &__station-logo {
+    background: url("../images/Ellipse 1.png"), url("../images/M.png");
+    background-size: cover, 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+  }
+
+  &__download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: $dark-gray-color;
+    width: 463px;
+    height: 412px;
+    transform: translateX(-150px);
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  &__download-link {
+    text-decoration: none;
+    color: $orange-color;
+  }
+
+  &__download-yellow {
+    background: $orange-color;
+    width: 463px;
+    height: 412px;
+    z-index: 1;
+  }
+
+  &__download-acrticle {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__download-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__download-input {
+    background: $dark-gray-color;
+    margin-bottom: 100px;
+    outline: none;
+    width: 315px;
+    height: 50px;
+    border-style: none none solid;
+    border-bottom: 1px solid $orange-color;
+    color: white;
+  }
+
+  &__form-button {
+    width: 315px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.button {
+  outline: none;
+  background: $orange-color;
+  border: 1px solid $orange-color;
+  transition: 0.3s;
+
+  &:hover {
+    color: $orange-color;
+    background: white;
+    border: 1px solid $orange-color;
+  }
+}

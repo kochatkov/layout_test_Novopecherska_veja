@@ -1,0 +1,119 @@
+@import "utils/vars";
+
+.player {
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+
+  &__background {
+    width: 400px;
+    height: 533px;
+    transform: translate(-15px, 10px);
+  }
+
+  &__mac-wrapper {
+    position: relative;
+    max-width: 954px;
+    max-height: 600px;
+  }
+
+  &__mac {
+    width: 100%;
+    height: auto;
+  }
+
+  &__play {
+    position: relative;
+    background-image: url("../images/player/player__background.png");
+    width: 954px;
+    height: 600px;
+  }
+
+  &__play-dark {
+    background-image: url("../images/player/Rectangle 81.png");
+    width: 40vw;
+    height: 500px;
+    transform: translate(80px, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__play-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__play-button {
+    background-image: url("../images/player/play-button_button.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 10vw;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__play-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    color: $orange-color;
+    transform: translate(0, 35px);
+    @media screen and (max-width: 1528px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 1210px) {
+      transform: translateY(10px);
+      font-size: 15px;
+    }
+  }
+
+  &__info {
+    width: 30vw;
+    height: 615px;
+    background: $orange-color;
+    margin-left: 40px;
+  }
+
+  &__info-text {
+    box-sizing: border-box;
+    padding: 70px 10px;
+    width: 30vw;
+    height: 615px;
+    background: $dark-gray-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 165.6%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: $orange-color;
+    transform: translate(0, -10px);
+    @media screen and (max-width: 1550px) {
+      font-size: 23px;
+    }
+  }
+
+  &__info-info {
+    color: white;
+    font-size: 24px;
+    line-height: 165.6%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    @media screen and (max-width: 1550px) {
+      font-size: 20px;
+    }
+  }
+}
